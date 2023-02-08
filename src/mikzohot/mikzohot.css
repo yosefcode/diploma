@@ -1,0 +1,88 @@
+.div_all_mikzohot {
+    width: 78%;
+    margin: 0.5cm auto 0;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.div_mikzohot {
+    width: 49%;
+}
+
+.div_title {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.title_mikzohot {
+    background-color: var(--blue);
+    color: white;
+    width: 50%;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px 0;
+    height: 0.6cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.div_all_half {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.div_half_mikzohot {
+    width: calc(100% - 2px);
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    border-bottom: 2px solid var(--blue);
+    border-left: 2px solid var(--blue);
+}
+
+.side_title {
+    width: 10%;
+    background-color: var(--gray);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    writing-mode: vertical-rl;
+    padding: 10px 0 0 0;
+}
+
+.div_all_short {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid var(--blue);
+    height: 0.927cm;
+}
+
+.div_mikzoa {
+    width: 50%;
+    background-color: var(--gray-light);
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.div_halichot input {
+    border: none;
+}
