@@ -29,11 +29,15 @@ function Footer({
         <div>
           <div style={{ display: "flex" }}>
             שם התלמידה{" "}
-            <input
-              style={{ width: "120px" }}
-              name={"name"}
-              onChange={onchange}
-            />
+            {edit ? (
+              <input
+                style={{ width: "120px" }}
+                name={"name"}
+                onChange={onchange}
+              />
+            ) : (
+              <div className="footer_print">{selectValue?.name}</div>
+            )}
             <div style={{ marginRight: "20px", display: "flex" }}>
               {" "}
               כיתה {input("class", "30px")}
