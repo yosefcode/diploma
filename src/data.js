@@ -13,6 +13,7 @@ const b = [
   { value: "מספיק" },
   { value: "מספיק בקושי" },
   { value: "בלתי מספיק" },
+  { value: "טעונת בחינה" },
 ];
 const halichot = [
   { value: "תפילה" },

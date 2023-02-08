@@ -27,7 +27,7 @@ function Footer({
     <div className="footer" dir="rtl">
       <div className="footer_right">
         <div>
-          <div style={{ display: "flex" }}>
+          <div className="print_flex">
             שם התלמידה{" "}
             {edit ? (
               <input
@@ -38,7 +38,7 @@ function Footer({
             ) : (
               <div className="footer_print">{selectValue?.name}</div>
             )}
-            <div style={{ marginRight: "20px", display: "flex" }}>
+            <div style={{ marginRight: "20px" }} className="print_flex">
               {" "}
               כיתה {input("class", "30px")}
             </div>
@@ -64,15 +64,15 @@ function Footer({
       </div>
 
       <div className="footer_left">
-        <div style={{ display: "flex" }}>
+        <div className="print_flex">
           מס' ימי לימוד
           {input("numDays", "70px")}
         </div>
-        <div style={{ display: "flex" }}>
+        <div className="print_flex">
           יום {input("day", "40px")}
           לחודש {input("month", "60px")}
           תש{" "}
-          <div style={{ marginRight: !edit && "-7px", display: "flex" }}>
+          <div style={{ marginRight: !edit && "-7px" }} className="print_flex">
             {input("year", "30px")}
           </div>
         </div>

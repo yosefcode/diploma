@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 400;
     color: var(--blue);
 
@@ -42,7 +42,7 @@
 
 .footer_print {
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 400;
     color: var(--blue);
     margin: 0 8px;
 
@@ -57,7 +57,7 @@
 
 .div2 {
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 400;
     color: black;
     border: 1px solid rgb(142, 142, 142);
     width: 7.5cm;
@@ -70,4 +70,9 @@
     height: 2.5cm;
     margin: 33px 10px 0 0;
 
+}
+
+.print_flex {
+    display: flex;
+    align-items: baseline
 }
