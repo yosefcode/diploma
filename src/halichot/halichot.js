@@ -7,7 +7,7 @@ function Halichot({ selectValue, setSelectValue, onchange, addText, edit }) {
     <div>
       <div className="div_halichot">
         <div className="title_halichot" dir="rtl">
-          מחצית א'
+          מחצית ב'
         </div>
         <div className="div_all_halichot">
           <div className="div_half">
