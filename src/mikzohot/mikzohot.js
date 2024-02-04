@@ -134,7 +134,31 @@ function Mikzohot({ selectValue, setSelectValue, onchange, addText, edit }) {
           <div style={{ width: "90%" }}>
             {clali.map((item, index) => (
               <div className="div_all_short" key={index}>
-                <div className="div_mikzoa">{item.value}</div>
+                <div className="div_mikzoa">
+                  {item.value === "חשבון" ? (
+                    <div
+                      style={{ display: "flex", flexDirection: "row-reverse" }}
+                    >
+                      {`${item.value}`}
+                      <div className="hakbaza">
+                        -א
+                        {edit ? (
+                          <select name={"hakbaza"} onChange={onchange}>
+                            <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                          </select>
+                        ) : (
+                          <div className="nikud_print_hakbaza">
+                            {selectValue?.["hakbaza"]}
+                          </div>
+                        )}
+                      </div>{" "}
+                    </div>
+                  ) : (
+                    item.value
+                  )}
+                </div>
                 <div className="div_nikud">
                   {edit ? (
                     <div className="select_nikud">

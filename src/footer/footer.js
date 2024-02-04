@@ -47,18 +47,32 @@ function Footer({
           <div className="parent">
             <div className="block_right"></div>
             <div
+              className="div1"
+              contentEditable={edit ? "true" : "false"}
+              onInput={(e) => {
+                setSelectValue({
+                  ...selectValue,
+                  note_mane: e.currentTarget.textContent,
+                });
+              }}
+              style={{ border: !edit && "none" }}
+            >
+              {edit ? "" : selectValue?.note_mane}
+            </div>
+            <div
               className="div2"
               contentEditable={edit ? "true" : "false"}
               onInput={(e) => {
                 setSelectValue({
                   ...selectValue,
-                  note: e.currentTarget.textContent,
+                  note_message: e.currentTarget.textContent,
                 });
               }}
               style={{ border: !edit && "none" }}
             >
-              {edit ? "" : selectValue?.note}
+              {edit ? "" : selectValue?.note_message}
             </div>
+            <div className="signature">באהבה המורה מיכל כהן</div>
           </div>
         </div>
       </div>

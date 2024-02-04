@@ -86,3 +86,21 @@
 .div_halichot input {
     border: none;
 }
+
+.hakbaza {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--gray-light);
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 20px;
+}
+
+.nikud_print_hakbaza {
+    width: fit-content !important;
+    font-size: 10px;
+}

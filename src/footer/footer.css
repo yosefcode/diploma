@@ -55,24 +55,46 @@
     float: right;
 }
 
-.div2 {
+.div1 {
     font-size: 15px;
     font-weight: 400;
     color: black;
     border: 1px solid rgb(142, 142, 142);
     width: 7.5cm;
-    height: 2.5cm;
+    height: 0.6cm;
     line-height: 22px;
+    padding: 1px 0 0 0;
+    /* overflow: hidden; */
+}
+
+.div2 {
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+    border: 1px solid rgb(142, 142, 142);
+    width: calc(7.5cm - 16px);
+    height: 1.7cm;
+    line-height: 16px;
+    padding: 0 8px;
 }
 
 .parent {
     width: 7.5cm;
-    height: 2.5cm;
+    height: 2.4cm;
     margin: 33px 10px 0 0;
+    position: relative;
 
 }
 
 .print_flex {
     display: flex;
     align-items: baseline
+}
+
+.signature {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    font-size: 13px;
+    color: black;
 }
